@@ -1,21 +1,16 @@
-import "./App.css";
-import React from "react";
-
-// class App extends React.Component {
-//   state = {};
-//   render() {
-//     return (
-//       <>
-//         <h1>hello world</h1>
-//       </>
-//     );
-//   }
-// }
+import React, { useEffect, useState } from "react";
+import Counter from "./Counter";
+import Show from "./Show";
 
 function App() {
+  const [count, setCount] = useState(0);
+
   return (
     <div>
-      <h1>Hello world</h1>
+      <h1>Hello world! this is {count} </h1>
+      <Counter setCount={setCount} /> {/* <Counter data={(setCount,x)} /> */}
+      {/* <Counter {...val} /> */}
+      <Show data={count} />
     </div>
   );
 }

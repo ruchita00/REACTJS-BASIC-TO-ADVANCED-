@@ -29,3 +29,5 @@ should component update() (rerendering component or not after update the compone
 
 
 
+states:
+States are basically internal component data
